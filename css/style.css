@@ -1,0 +1,26 @@
+/* Utility */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #fff;
+    --lightskyblue: #B4CFE7;
+    --blue: #0161FF;
+    --black: #000;
+    --portfoliogreen: #A1D39B;
+    --portfolioskyblue: #0093CE;
+    --portfoliobordeaux: #61082B;
+    --portfoliored: #FF1D1D;
+    --portfoliogrey: #F5F5F5;
+    --portfoliodarkred: #D5001E;
+    --portfolioblue: #0D2481;
+    --portfolioyellow: #FFD830;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--white);
+}
