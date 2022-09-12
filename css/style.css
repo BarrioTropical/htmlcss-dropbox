@@ -90,11 +90,21 @@ a{
     width: 100%;
     padding-top: 80px;
     position: relative;
+    padding-left: 40px;
+}
+
+.hero{
+    bottom: -90px;
+    position: relative;
 }
 
 .hero-flex{
     display: flex;
     padding: 50px 0;
+}
+
+.paragraph-hero{
+    padding-bottom: 50px;
 }
 
 .w70 img{
@@ -109,6 +119,7 @@ a{
 .tariffe{
     display: flex;
     justify-content: space-between;
+    margin: 100px;
 }
 
 .card{
@@ -116,17 +127,77 @@ a{
     border: var(--portfoliogrey) solid 1px;
     padding-left: 30px;
 }
+.card h3{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
 
 .card h4{
     padding: 10px 0;
 }
 
-.card li{
-    list-style: none;
-    padding: 10px;
+.card h5{
+    padding: 10px 0;
 }
 
+.card li{
+    padding: 10px 0;
+    display: flex;
+    font-size: 14px;
+    list-style: none;
+}
+
+  .card i{
+    padding-right: 5px;
+}
+
+.card .fa-check{
+    color: var(--blue);
+}
+
+.card span{
+    display: block;
+}
+
+
+.card .second-hr{
+    width: 50px;
+}
+
+.card p{
+    padding-top: 50px;
+}
+
+.card hr{
+    border: var(--gray) solid 1px;
+}
+
+.card .secondo-hr{
+    width: 50px;
+}
+
+.card h5{
+    padding-top: 50px;
+    padding-left:30px ;
+}
+
+
+
 /* Footer */
-footer{
+.footer-flex{
     width: 100%;
+    background-color: var(--black);
+    height: 200px;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+footer li{
+    list-style: none;
+    padding: 5px;
 }
