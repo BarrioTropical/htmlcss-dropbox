@@ -36,85 +36,97 @@ body{
     max-width: 1200px;
 }
 
-.container-reduce{
+.container-boxed{
+    margin: 0 auto;
     max-width: 1000px;
 }
 
-h1{
-    font-size: 76px;
-}
-
-
-.flex{
-    display: flex;
-}
-
-.width30{
+.w30{
     width: 30%;
 }
 
-.width70{
+.w70{
     width: 70%;
 }
 
+.button{
+    background-color: var(--blue);
+    padding: 10px 15px;
+    color: var(--white);
+}
+
 /* Header */
+
+/* Menù */
 header nav{
-    background-color: var(--white);
     width: 100%;
+    background-color: var(--white);
     height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
-    top: 0;
-    left: 0;
     z-index: 1000;
 }
 
-.container{
-    margin: 0 auto;
-    max-width: 1170px;
+header ul{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px 0px;
-    align-items: center;
 }
 
-.flexnav{
-    display: flex;
-    min-width: 500px;
-}
-
-.flexnav li{
+header li{
     list-style: none;
-    flex-direction: row;
-    padding: 0 10px;
+    padding: 10px;
+}
+
+a{
     text-decoration: none;
+    color: var(--black);
 }
 
-header nav ul{
-    min-width: 500px;
-}
+/* Hero Section */
 
-header nav.container{
-    padding: 20px 0;
-}
-
-
-#hero{
+.hero-section{
     background-color: var(--lightskyblue);
+    width: 100%;
     padding-top: 80px;
+    position: relative;
 }
 
-#hero .container{
-    position: relative;
-    bottom: -80px;
+.hero-flex{
+    display: flex;
+    padding: 50px 0;
+}
+
+.w70 img{
+    width: 80%;
+}
+
+/* Main Section */
+.sezione{
+    margin: 100px 0px 50px 0px;
+}
+
+.tariffe{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: calc((100% - 10px) / 3);
+    border: var(--portfoliogrey) solid 1px;
+    padding-left: 30px;
+}
+
+.card h4{
+    padding: 10px 0;
+}
+
+.card li{
+    list-style: none;
+    padding: 10px;
 }
 
 /* Footer */
 footer{
-    background-color: var(--black);
-    color: var(--white);
-}
-
-footer li{
-    list-style-type: none;
+    width: 100%;
 }
