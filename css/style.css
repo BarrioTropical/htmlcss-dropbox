@@ -300,6 +300,36 @@ main{
     border: 1px solid var(--lightskyblue);
 }
 
+/* Plus Dropbox */
+.article-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.article{
+    padding: 20px 10px;
+    width: calc((100% - 60px) / 3);
+
+}
+
+.article img{
+    width: 100%;
+}
+
+/* Discover Dropbox */
+.discover{
+    padding: 50px 0px;
+}
+
+.discover-client{
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+
+
 /* Footer */
 .footer-flex{
     width: 100%;
