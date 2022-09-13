@@ -370,6 +370,32 @@ main{
     background-size: 50%;
 }
 
+/* Sezione Banner */
+.banner{
+    min-width: 100%;
+    background-color: var(--lightskyblue);
+    padding: 50px 0px;
+}
+
+.banner-section{
+    display: flex;
+    align-items: flex-start;
+}
+
+.banner-section h2{
+    width: 70%;
+    color: var(--portfoliobordeaux);
+}
+
+.banner-section button{
+    width: 30%;
+    background-color: var(--white);
+    color: var(--black);
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
 
 
 /* Footer */
