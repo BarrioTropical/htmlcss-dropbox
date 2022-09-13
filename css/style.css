@@ -279,7 +279,26 @@ main{
     margin-top: 30px;
 }
 
+/* Partner */
+.partner-img{
+    width: 50%;
+}
 
+.partner-testi{
+    padding: 40px;
+}
+
+.partner-testi h2,
+.partner-testi p{
+    margin-bottom: 30px;
+}
+
+
+.button-partner{
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid var(--lightskyblue);
+}
 
 /* Footer */
 .footer-flex{
