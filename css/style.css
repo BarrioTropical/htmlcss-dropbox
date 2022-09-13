@@ -162,24 +162,28 @@ main{
     margin: 100px;
 }
 
+.box-card{
+    padding: 0px 30px;
+}
+
 .card{
     width: calc((100% - 10px) / 3);
     border: var(--portfoliogrey) solid 1px;
-    padding-left: 30px;
+    padding-bottom: 40px;
 }
 .card h3{
     text-align: center;
     padding: 20px 0;
     font-size: 16px;
+    border: var(--portfoliogrey) solid 1px;
 }
-
 
 .card h4{
-    padding: 10px 0;
+    padding-top: 20px;
 }
 
-.card h5{
-    padding: 10px 0;
+.card p{
+    font-size: 14px;
 }
 
 .card li{
@@ -189,7 +193,21 @@ main{
     list-style: none;
 }
 
-  .card i{
+.billing{
+    font-size: 16px;
+    color:#9292AE;
+}
+
+.button-tariffe{
+    text-align: center;
+}
+
+.acquista{
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+.card i{
     padding-right: 5px;
 }
 
