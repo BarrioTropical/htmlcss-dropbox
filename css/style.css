@@ -145,8 +145,15 @@ header li{
 }
 
 /* Main Section */
+main{
+    padding-top: 100px;
+}
 .sezione{
     margin: 100px 0px 50px 0px;
+}
+
+.label{
+    padding: 20px;
 }
 
 .tariffe{
