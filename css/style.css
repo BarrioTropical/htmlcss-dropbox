@@ -328,6 +328,48 @@ main{
     color: var(--blue);
 }
 
+/* Sezione Clienti */
+.clienti{
+    margin: 0;
+    width: 100%;
+}
+
+.clienti-container{
+    background-color: var(--white);
+    display: flex;
+    width: calc(100% 3);
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.clienti-container:after {
+    content: "";
+    display: block;
+    padding-bottom: 10%;
+}
+
+.cliente{
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+
+.cliente img {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cliente-1 {
+    background-color: var(--portfoliogreen);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/designit.svg);
+    background-size: 50%;
+}
+
 
 
 /* Footer */
