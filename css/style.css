@@ -331,6 +331,11 @@ main{
 
 
 /* Footer */
+footer{
+    margin: 0 auto;
+    background-color: var(--black);
+}
+
 .footer-flex{
     width: 100%;
     background-color: var(--black);
@@ -339,10 +344,22 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px 0px;
 }
 
+footer h2{
+    font-size: 25px;
+}
 
 footer li{
     list-style: none;
     padding: 5px;
+}
+
+.subfooter{
+    height: 80px;
+    color: var(--white);
+    text-decoration: none;
+    padding-top: 20px;
+    border-top: 1px solid var(--white);
 }
