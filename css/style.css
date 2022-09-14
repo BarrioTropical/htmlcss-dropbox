@@ -573,6 +573,8 @@ main{
     cursor: pointer;
     transition: .2s;
 }
+
+
   
 #faq p{
     text-align: left;
@@ -610,6 +612,8 @@ main{
     margin-top: 28px;
     right: 15px;
 }
+
+
 #faq ul li i:before, #faq  ul li i:after {
     content: "";
     position: absolute;
@@ -635,9 +639,7 @@ main{
     touch-action: manipulation;
 }
 
-#faq ul li input[type=checkbox]:checked ~ h2 {
-    color: #000;
-}
+
 #faq ul li input[type=checkbox]:checked ~ p {
     margin-top: 0;
     max-height: 0;
@@ -695,4 +697,46 @@ footer li a:hover{
     text-decoration: none;
     padding-top: 20px;
     border-top: 1px solid var(--white);
+}
+
+
+/* Animazioni */
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
 }
