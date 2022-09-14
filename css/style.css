@@ -61,6 +61,15 @@ body{
     cursor: pointer;
 }
 
+.button:hover{
+    background-color: var(--portfoliogrey);
+    padding: 10px 15px;
+    color: var(--black);
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid var(--black);
+}
+
 a{
     text-decoration: none;
     color: var(--black);
@@ -351,6 +360,14 @@ main{
     border: 1px solid var(--lightskyblue);
 }
 
+.button-partner:hover{
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    color: var(--portfoliogrey);
+}
+
 /* Plus Dropbox */
 .article-group{
     display: flex;
@@ -508,6 +525,16 @@ main{
     text-align: center;
 }
 
+.banner-section a:hover{
+    width: 30%;
+    background-color: var(--black);
+    color: var(--portfoliogrey);
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+
 /* Sezione FAQ */
 .faq-section{
     min-width: 100%;
@@ -654,6 +681,11 @@ footer li{
 
 footer li a{
     color: var(--white);
+    cursor: pointer;
+}
+
+footer li a:hover{
+    color: var(--blue);
     cursor: pointer;
 }
 
