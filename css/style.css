@@ -141,12 +141,15 @@ header li{
     width: 80%;
 }
 
-.arrow{
-    display: inline-block;
-    font-size: 50px;
-    margin: 40px 0px;
+#annulla{
+    padding-top: 30px;
 }
 
+#arrow{
+    display: inline-block;
+    font-size: 50px;
+    padding-top: 80px;
+}
 /* Main Section */
 main{
     padding-top: 100px;
@@ -155,9 +158,48 @@ main{
     margin: 50px 0px 50px 0px;
 }
 
-.label{
-    padding: 20px;
-}
+.label {
+    cursor: pointer;
+    font-size: 22px;
+  }
+  
+  /* Hide the browser's default radio button */
+  .label input {
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .label {
+
+    height: 25px;
+    width: 25px;
+    background-color: var(--white);
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .label:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .label input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .label input:checked ~ .checkmark:after {
+    display: block;
+  }
+
 
 .tariffe{
     display: flex;
@@ -541,7 +583,7 @@ main{
     margin-top: 28px;
     right: 15px;
 }
-#faq ul li i:before, ul li i:after {
+#faq ul li i:before, #faq  ul li i:after {
     content: "";
     position: absolute;
     background-color: var(--black);
