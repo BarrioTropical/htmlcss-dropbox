@@ -380,6 +380,15 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    filter: invert(1);
+}
+
+.logo-portfolio-black{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .portfolio-1 {
@@ -447,6 +456,121 @@ main{
 }
 
 /* Sezione FAQ */
+.faq-section{
+    min-width: 100%;
+    background-color: var(--portfoliogrey);
+    padding: 50px 0px;
+}
+
+.faq-section h2{
+    padding-bottom: 20px;
+}
+
+#faq {
+    margin: auto;
+    text-align: center;
+    max-width: 1000px;
+}
+  
+#faq ul {
+    text-align: left;
+}
+  
+.transition, p, ul li i:before, ul li i:after {
+    transition: all 0.3s;
+}
+  
+#faq h3{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    padding: 15px 15px 0;
+    text-transform: none;
+    font-weight: 700;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    transition: .2s;
+}
+  
+#faq p{
+    text-align: left;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    opacity: 1;
+    transform: translate(0, 0);
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 0 50px 0 15px;
+    transition: .3s opacity, .6s max-height;
+    z-index: 2;
+}
+  
+#faq ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 0;
+}
+
+#faq ul li{
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid var(--black);
+}
+
+
+#faq ul li i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 28px;
+    right: 15px;
+}
+#faq ul li i:before, ul li i:after {
+    content: "";
+    position: absolute;
+    background-color: var(--black);
+    width: 3px;
+    height: 9px;
+}
+
+#faq ul li i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+#faq ul li i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+
+#faq ul li input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    touch-action: manipulation;
+}
+
+#faq ul li input[type=checkbox]:checked ~ h2 {
+    color: #000;
+}
+#faq ul li input[type=checkbox]:checked ~ p {
+    margin-top: 0;
+    max-height: 0;
+    transition: .3s;
+    opacity: 0;
+    transform: translate(0, 50%);
+}
+
+#faq ul li input[type=checkbox]:checked ~ i:before {
+    transform: translate(2px, 0) rotate(45deg);
+}
+#faq ul li input[type=checkbox]:checked ~ i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+}
 
 /* Footer */
 footer{
